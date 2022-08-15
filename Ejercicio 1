@@ -1,0 +1,11 @@
+def fib(n):
+  if n==0:
+    r = 0
+  elif n==1:
+    r = 1
+  else:
+    r = fib(n-1) + fib(n-2)
+  return r
+
+n=int(input('Ingrese un número: '))
+fib(n)
