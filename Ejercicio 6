@@ -1,0 +1,8 @@
+def TorresHanoi(n,i,d,aux):
+  if(n>0):
+    TorresHanoi (n-1,i,aux,d)
+    print("\nEl anillo se mueve desde la torre "+str(i)+" hasta la torre "+str(d))
+    TorresHanoi (n-1,aux,d,i)
+
+n = int(input("Ingrese la cantidad de anillos: "))
+TorresHanoi(n,1,3,2)
