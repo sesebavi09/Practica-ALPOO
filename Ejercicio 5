@@ -1,0 +1,7 @@
+def bina(num):
+  if num>= 1:
+   bina(num // 2)
+   print(num % 2, end= "") 
+
+n= int(input("Ingrese un número: "))
+bina(n)
