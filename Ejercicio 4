@@ -1,0 +1,12 @@
+def mcd(a,b):
+  if a==b:
+    m = a
+  elif a>b:
+    m = mcd(a-b,b)
+  else:
+    m = mcd(a,b-a)
+  return m
+
+a=int(input('Ingrese primer número: '))
+b=int(input('Ingrese segundo número: '))
+print(f"El máximo común divisor es {mcd(a,b)}")
