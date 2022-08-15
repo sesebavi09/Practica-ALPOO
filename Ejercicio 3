@@ -1,0 +1,8 @@
+def sumaN(n):
+  if n==1:
+    return 1
+  else:
+    return n+sumaN(n-1)
+
+n= int(input("Ingrese un número: "))
+sumaN(n)
